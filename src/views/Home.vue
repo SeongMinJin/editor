@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="d-flex justify-start flex-wrap">
+    <Coffee></Coffee>
+    <Latte></Latte>
+    <Tea></Tea>
+    <Ade></Ade>
+    <Bakery></Bakery>
+    <New></New>
+    <Recommend></Recommend>
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Coffee from '@/components/Coffee.vue'
+import Latte from '@/components/Latte.vue'
+import Tea from '@/components/Tea.vue'
+import Ade from '@/components/Ade.vue'
+import Bakery from '@/components/Bakery.vue'
+import New from '@/components/NewMenu.vue'
+import Recommend from '@/components/Recommend.vue'
 
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
+    Coffee,
+    Latte,
+    Tea,
+    Ade,
+    Bakery,
+    New,
+    Recommend
   }
 }
 </script>
